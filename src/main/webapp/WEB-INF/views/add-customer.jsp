@@ -5,6 +5,13 @@
 <html>
 <head>
     <title>Add Customer Form</title>
+    <style>
+        .error
+        {
+            color: #ff0000;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,14 +22,17 @@
         <tr>
             <td><spring:message code="lbl.firstName" text="First Name" /></td>
             <td><form:input path="firstName" /></td>
+            <td><form:errors path="firstName" cssClass="error" /></td>
         </tr>
         <tr>
             <td><spring:message code="lbl.lastName" text="Last Name" /></td>
             <td><form:input path="lastName" /></td>
+            <td><form:errors path="lastName" cssClass="error" /></td>
         </tr>
         <tr>
             <td><spring:message code="lbl.address" text="Address" /></td>
             <td><form:input path="address" /></td>
+            <td><form:errors path="address" cssClass="error" /></td>
         </tr>
         <tr>
             <td colspan="2"><input type="submit" value="Add Customer"/></td>
