@@ -20,7 +20,7 @@
 <form:form method="post" modelAttribute="customer">
     <table>
         <tr>
-            <td><spring:message code="lbl.firstName" text="First Name" /></td>
+            <td><spring:message code="lbl.firstName" /></td>
             <td><form:input path="firstName" /></td>
             <td><form:errors path="firstName" cssClass="error" /></td>
         </tr>
